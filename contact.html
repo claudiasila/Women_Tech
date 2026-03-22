@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact</title>
+
+<style>
+body {
+    background: linear-gradient(to right, #e94e77, #2596be);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 40px;
+}
+
+header a {
+    margin-left: 35px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.active {
+    color: #e94e77;
+}
+
+/* MAIN */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 40px 20px;
+}
+
+/* CONTAINER */
+.contact-container {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+    max-width: 1100px;
+    width: 100%;
+}
+
+/* LEFT SIDE */
+.contact-left {
+    flex: 1;
+}
+
+/* TITLE */
+.contact-left h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+/* SUBTEXT */
+.contact-left p {
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+/* FORM CARD */
+.form-card {
+    background: #f5f1ea;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* INPUTS */
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: none;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+/* OPTIONAL POLISH FOR TEXTAREA FOCUS */
+textarea:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(31,111,178,0.4);
+}
+
+/* BUTTON */
+button {
+    background: #1f6fb2;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #155a91;
+}
+
+/* RIGHT SIDE ALIGNMENT */
+.contact-right {
+    display: flex;
+    align-items: flex-start;
+}
+
+/* IMAGE */
+.contact-right img {
+    width: 260px;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 3px solid rgba(255,255,255,0.3);
+    box-shadow:
+        0 0 0 4px rgba(31,111,178,0.3),
+        0 0 15px rgba(31,111,178,0.25),
+        0 10px 25px rgba(0,0,0,0.25);
+}
+
+/* FOOTER */
+footer {
+    padding: 20px 30px;
+    font-size: 14px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer-left {
+    justify-self: start;
+}
+
+.footer-center {
+    justify-self: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: underline;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<a href="index.html">Main</a>
+<a href="home.html">Home</a>
+<a href="about.html">About</a>
+<a href="contact.html" class="active">Contact</a>
+</header>
+
+<main>
+
+<div class="contact-container">
+
+<div class="contact-left">
+<h1>Contact Me</h1>
+
+<p>If you'd like to connect or reach out to me, please use the contact form below.</p>
+
+<div class="form-card">
+<input type="text" placeholder="Name">
+<input type="email" placeholder="Email">
+<textarea rows="5" placeholder="Message"></textarea>
+
+<button>Send Message</button>
+</div>
+
+</div>
+
+<div class="contact-right">
+<img src="images/Contact.png" alt="Contact image">
+</div>
+
+</div>
+
+</main>
+
+<footer>
+<div class="footer-container">
+
+<div class="footer-left">
+© 2026 Claudia | My learning journey into technology
+</div>
+
+<div class="footer-center">
+<a href="mailto:cake1@gmail.com">Email Us</a> |
+<a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+</div>
+
+</div>
+</footer>
+
+</body>
+</html>

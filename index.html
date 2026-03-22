@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>First Website</title>
+
+<style>
+body {
+    background: linear-gradient(to right, #e94e77, #2596be);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 40px;
+}
+
+header a {
+    margin-left: 25px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header a:hover {
+    color: #e94e77;
+}
+
+.active {
+    color: #e94e77;
+}
+
+/* MAIN */
+main {
+    margin-top: 30px;
+    padding: 0 50px 50px;
+    flex: 1;
+    max-width: 1100px;
+}
+
+/* TOP LINKS */
+.top-links {
+    margin-bottom: 30px;
+}
+
+.top-links a {
+    color: white;
+    opacity: 0.9;
+    margin-right: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.top-links a:hover {
+    opacity: 1;
+    transform: translateY(-2px);
+}
+
+/* SECTION SPACING */
+section {
+    margin-bottom: 60px;
+}
+
+/* HEADINGS */
+h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* GALLERY CARD */
+.gallery-card {
+    display: inline-block;
+    background: #f5f1ea;
+    padding: 18px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+/* GALLERY LAYOUT */
+.gallery {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+/* NEW IMAGE SIZE */
+.gallery-img {
+    width: 230px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.3s;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    display: block;
+}
+
+/* IMAGE HOVER */
+.gallery-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* PARAGRAPH */
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* VIDEO BUTTON */
+.video-button {
+    display: inline-block;
+    margin-top: 10px;
+    background: white;
+    color: #2596be;
+    padding: 10px 18px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.video-button:hover {
+    background: #f0f0f0;
+    transform: translateY(-2px);
+}
+
+/* FOOTER */
+footer {
+    padding: 20px 30px;
+    font-size: 14px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.footer-left {
+    justify-self: start;
+}
+
+.footer-center {
+    justify-self: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: underline;
+    margin: 0 5px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<a href="index.html" class="active">Main</a>
+<a href="home.html">Home</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+</header>
+
+<main>
+
+<div class="top-links">
+<a href="https://www.capitalccg.ac.uk">Visit the College</a>
+<a href="https://www.capitalccg.ac.uk" target="_blank">Open new</a>
+</div>
+
+<section>
+<h2>Gallery</h2>
+
+<div class="gallery-card">
+<div class="gallery">
+<img src="images/Image1.png" class="gallery-img" alt="Woman coding on a laptop with data displayed on screen">
+<img src="images/Image2.png" class="gallery-img" alt="Students studying together and discussing notes in class">
+<img src="images/image3.png" class="gallery-img" alt="Student working independently on a laptop in a library">
+<img src="images/image4.png" class="gallery-img" alt="Woman studying at home and highlighting notes in a book">
+</div>
+</div>
+</section>
+
+<section>
+<h2>Video</h2>
+
+<p>This video cannot be embedded, so click below:</p>
+
+<a class="video-button" href="https://youtube.com/shorts/zLDPSZpm_SM?si=WKsWFyBi9nEcv2Ka" target="_blank">
+Watch College Video
+</a>
+</section>
+
+</main>
+
+<footer>
+<div class="footer-container">
+
+<div class="footer-left">
+© 2026 Claudia | My learning journey into technology
+</div>
+
+<div class="footer-center">
+<a href="mailto:cake1@gmail.com">Email Us</a> |
+<a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+</div>
+
+</div>
+</footer>
+
+</body>
+
+</html>
