@@ -1,68 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
+body {
+    background: linear-gradient(to right, #e94e77, #2596be);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: white;
+}
 
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Claudia | Main</title>
-<link rel="stylesheet" href="style.css">
-</head>
+/* HEADER */
+header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 40px;
+}
 
-<body>
+header a {
+    margin-left: 25px;
+    color: white;
+    text-decoration: none;
+}
 
-<header>
-<a href="index.html" class="active">Main</a>
-<a href="home.html">Home</a>
-<a href="about.html">About</a>
-<a href="contact.html">Contact</a>
-</header>
-
-<main>
-
-<div class="top-links">
-<a href="https://www.capitalccg.ac.uk">Visit the College</a>
-<a href="https://www.capitalccg.ac.uk" target="_blank">Open new</a>
-</div>
-
-<section>
-<h2>Gallery</h2>
-
-<div class="gallery-card">
-<div class="gallery">
-<img src="images/Image1.png" class="gallery-img" alt="Woman coding on a laptop">
-<img src="images/Image2.png" class="gallery-img" alt="Students studying together">
-<img src="images/image3.png" class="gallery-img" alt="Student working independently">
-<img src="images/image4.png" class="gallery-img" alt="Woman studying at home">
-</div>
-</div>
-</section>
-
-<section>
-<h2>Video</h2>
-
-<p>This video cannot be embedded, so click below:</p>
-
-<a class="video-button" href="https://youtube.com/shorts/zLDPSZpm_SM?si=WKsWFyBi9nEcv2Ka" target="_blank">
-Watch College Video
-</a>
-</section>
-
-</main>
-
-<footer>
-<div class="footer-container">
-
-<div class="footer-left">
-© 2026 Claudia | Built using HTML, CSS & GitHub Pages
-</div>
-
-<div class="footer-center">
-<a href="mailto:cake1@gmail.com">Email Me</a> |
-<a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
-</div>
-
-</div>
-</footer>
-
-</body>
-</html>
+.active {
+    color: #e94e77;
+}
