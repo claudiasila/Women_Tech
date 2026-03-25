@@ -327,11 +327,11 @@ section {
     appearance: none;
     background: #1f6fb2;
     color: white;
-    padding: 10px 18px;
+    padding: 12px 22px;
     border-radius: 10px;
     border: none;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 15px;
     cursor: pointer;
     transition: all 0.3s ease;
     margin: 15px 0 25px 0;
