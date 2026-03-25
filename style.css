@@ -347,6 +347,7 @@ section {
 
 .dark-mode .about-container {
     background: #34495e;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.35);
 }
 
 .dark-mode .about-text,
@@ -355,14 +356,20 @@ section {
 }
 
 .dark-mode .about-text h1,
-.dark-mode .about-text h3 {
-    color: #ecf0f1;
+.dark-mode .about-text h3,
+.dark-mode h3[style] {
+    color: #ecf0f1 !important;
 }
 
 .dark-mode header a,
 .dark-mode footer a,
 .dark-mode .footer-left {
     color: #ecf0f1;
+}
+
+.dark-mode #theme-toggle {
+    background: #ecf0f1;
+    color: #2c3e50;
 }
 
 /* CONTACT PAGE */
