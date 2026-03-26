@@ -18,6 +18,16 @@ body {
     flex-direction: column;
 }
 
+/* CANVAS */
+#background-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
 /* HEADER */
 header {
     display: flex;
@@ -146,6 +156,8 @@ footer a {
 </head>
 
 <body>
+
+<canvas id="background-canvas"></canvas>
 
 <header>
 <a href="index.html">Main</a>
