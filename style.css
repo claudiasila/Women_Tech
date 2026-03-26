@@ -488,11 +488,11 @@ button:hover {
         0 0 0 4px rgba(31,111,178,0.3),
         0 0 15px rgba(31,111,178,0.25),
         0 10px 25px rgba(0,0,0,0.25);
-    transition: all 0.3s ease;
+    transition: 0.3s;
 }
 
 .contact-right img:hover {
-    transform: scale(1.04);
+    transform: scale(1.05);
 }
 
 /* FOOTER */
