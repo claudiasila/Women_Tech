@@ -203,4 +203,67 @@ section {
         0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
-/* (rest unchanged) */
+.learning h2 {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #1f6fb2;
+}
+
+.learning p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    color: #2a2a2a;
+}
+
+.learning ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.learning li {
+    font-size: 17px;
+    margin-bottom: 6px;
+    color: #2a2a2a;
+}
+
+/* ABOUT PAGE */
+.about-container {
+    max-width: 1000px;
+    width: 100%;
+    background: #f5f1ea;
+    border-radius: 20px;
+    padding: 50px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
+
+.about-text {
+    color: #333;
+}
+
+.about-text h1 {
+    color: #2f80c0;
+}
+
+.about-text h3 {
+    color: #e94e77;
+}
+
+/* CONTACT */
+.contact-container {
+    display: flex;
+    gap: 60px;
+}
+
+.form-card,
+.contact-details {
+    background: #f5f1ea;
+    color: #1f1f1f;
+    padding: 20px;
+    border-radius: 15px;
+}
