@@ -35,12 +35,14 @@ header a {
     transition: color 0.3s ease;
 }
 
+/* UPDATED HOVER */
 header a:hover {
-    color: #e94e77;
+    color: #a8dbe3; /* light teal */
 }
 
+/* UPDATED ACTIVE */
 .active {
-    color: #e94e77;
+    color: #ffffff; /* strong white */
 }
 
 /* MAIN */
@@ -251,7 +253,7 @@ section {
 }
 
 .about-text h3 {
-    color: #e94e77;
+    color: #1f6fb2; /* adjusted to match theme */
 }
 
 /* CONTACT */
