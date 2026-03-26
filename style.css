@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact</title>
-
-<style>
 body {
     background: linear-gradient(to right, #e94e77, #2596be);
     font-family: Arial, sans-serif;
@@ -24,11 +16,16 @@ header {
 }
 
 header a {
-    margin-left: 35px;
+    margin-left: 30px;
     color: white;
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header a:hover {
+    color: #e94e77;
 }
 
 .active {
@@ -38,13 +35,346 @@ header a {
 /* MAIN */
 main {
     flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 40px 40px 20px;
+    padding: 40px 50px 50px;
+    max-width: 1100px;
 }
 
-/* CONTAINER */
+/* TOP LINKS */
+.top-links {
+    margin-bottom: 30px;
+}
+
+.top-links a {
+    color: white;
+    opacity: 0.9;
+    margin-right: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.top-links a:hover {
+    opacity: 1;
+    transform: translateY(-2px);
+}
+
+/* HEADINGS */
+h1 {
+    font-size: 46px;
+    margin-bottom: 25px;
+    color: white;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+}
+
+/* GENERAL PARAGRAPHS */
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* GENERAL SECTION SPACING */
+section {
+    margin-bottom: 60px;
+}
+
+/* HERO - HOME PAGE */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.hero-text {
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hero img {
+    width: 320px;
+    border-radius: 20px;
+    border: 3px solid rgba(255,255,255,0.3);
+    box-shadow:
+        0 0 0 4px rgba(31,111,178,0.3),
+        0 0 15px rgba(31,111,178,0.25),
+        0 10px 25px rgba(0,0,0,0.25);
+    transition: all 0.3s ease;
+}
+
+.hero img:hover {
+    transform: scale(1.04);
+}
+
+/* INTRO CARD */
+.intro-card {
+    margin-top: 0;
+    margin-bottom: 15px;
+    max-width: 700px;
+    background: #f5f1ea;
+    color: #1f1f1f;
+    padding: 25px 30px;
+    border-radius: 20px;
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.12),
+        0 2px 6px rgba(0, 0, 0, 0.08);
+    font-size: 18px;
+    line-height: 1.8;
+    transition: 0.3s ease;
+}
+
+.intro-card:hover {
+    transform: translateY(-3px);
+}
+
+.intro-card .card-title {
+    color: #1f6fb2;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.6;
+    margin-bottom: 18px;
+}
+
+/* HOME BUTTON */
+.hero-text a {
+    display: inline-block;
+    align-self: flex-start;
+    margin-top: 20px;
+    background-color: #f5f1ea;
+    color: #1f6fb2;
+    padding: 12px 22px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    min-width: 140px;
+    width: fit-content;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.hero-text a:hover {
+    background-color: #eae6df;
+    transform: translateY(-2px);
+}
+
+/* LEARNING CARD */
+.learning {
+    margin: 60px 0 0 0;
+    width: 100%;
+    max-width: 1000px;
+    background: #f5f1ea;
+    color: #1f1f1f;
+    padding: 35px 40px;
+    border-radius: 22px;
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.14),
+        0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.learning h2 {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #1f6fb2;
+}
+
+.learning p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    color: #2a2a2a;
+}
+
+.learning ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.learning li {
+    font-size: 17px;
+    margin-bottom: 6px;
+    color: #2a2a2a;
+}
+
+/* MAIN PAGE GALLERY */
+.gallery-card {
+    display: inline-block;
+    background: #f5f1ea;
+    padding: 18px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.gallery {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.gallery-img {
+    width: 230px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.3s;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    display: block;
+}
+
+.gallery-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* VIDEO BUTTON */
+.video-button {
+    display: inline-block;
+    margin-top: 10px;
+    background: white;
+    color: #2596be;
+    padding: 10px 18px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.video-button:hover {
+    background: #f0f0f0;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* ABOUT PAGE */
+.about-container {
+    max-width: 1000px;
+    width: 100%;
+    background: #f5f1ea;
+    border-radius: 20px;
+    padding: 50px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+    transition: 0.3s ease;
+}
+
+.about-container:hover {
+    transform: translateY(-3px);
+}
+
+.about-img img {
+    width: 240px;
+    height: 320px;
+    object-fit: cover;
+    object-position: center 30%;
+    border-radius: 15px;
+    border: 3px solid rgba(255,255,255,0.3);
+    box-shadow:
+        0 0 0 6px rgba(37,150,190,0.4),
+        0 0 20px rgba(37,150,190,0.3),
+        0 10px 25px rgba(0,0,0,0.25);
+    transition: all 0.3s ease;
+}
+
+.about-img img:hover {
+    transform: scale(1.03);
+}
+
+.about-text {
+    color: #333;
+    max-width: 600px;
+}
+
+.about-text h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #2f80c0;
+}
+
+.about-text h3 {
+    color: #e94e77;
+    margin-bottom: 18px;
+    font-size: 20px;
+}
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 12px;
+    color: #333;
+}
+
+/* DARK MODE BUTTON */
+#theme-toggle {
+    display: inline-block;
+    background: #1f6fb2;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+}
+
+#theme-toggle:hover {
+    background: #155a91;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* DARK MODE */
+.dark-mode {
+    background: #2c3e50;
+    color: #ecf0f1;
+}
+
+.dark-mode .about-container {
+    background: #34495e;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.35);
+}
+
+.dark-mode .about-text,
+.dark-mode .about-text p {
+    color: #ecf0f1;
+}
+
+.dark-mode .about-text h1,
+.dark-mode .about-text h3,
+.dark-mode h3[style] {
+    color: #ecf0f1 !important;
+}
+
+.dark-mode header a,
+.dark-mode footer a,
+.dark-mode .footer-left {
+    color: #ecf0f1;
+}
+
+.dark-mode #theme-toggle {
+    background: #ecf0f1;
+    color: #2c3e50;
+}
+
+/* CONTACT PAGE */
 .contact-container {
     display: flex;
     gap: 60px;
@@ -53,26 +383,23 @@ main {
     width: 100%;
 }
 
-/* LEFT SIDE */
 .contact-left {
     flex: 1;
 }
 
-/* TITLE */
 .contact-left h1 {
     font-size: 42px;
     margin-bottom: 10px;
     color: white;
 }
 
-/* SUBTEXT */
 .contact-left p {
     margin-bottom: 25px;
     font-size: 16px;
     line-height: 1.6;
+    color: white;
 }
 
-/* FORM CARD */
 .form-card {
     background: #f5f1ea;
     padding: 25px;
@@ -81,8 +408,8 @@ main {
     margin-bottom: 25px;
 }
 
-/* INPUTS */
-input, textarea {
+input,
+textarea {
     width: 100%;
     padding: 12px;
     margin-bottom: 15px;
@@ -92,14 +419,12 @@ input, textarea {
     box-sizing: border-box;
 }
 
-/* INPUT FOCUS */
 input:focus,
 textarea:focus {
     outline: none;
     box-shadow: 0 0 0 2px rgba(31,111,178,0.4);
 }
 
-/* BUTTON */
 button {
     background: #1f6fb2;
     color: white;
@@ -117,7 +442,6 @@ button:hover {
     box-shadow: 0 6px 15px rgba(0,0,0,0.2);
 }
 
-/* CONTACT DETAILS CARD */
 .contact-details {
     background: #f5f1ea;
     color: #1f1f1f;
@@ -149,13 +473,11 @@ button:hover {
     text-decoration: underline;
 }
 
-/* RIGHT SIDE ALIGNMENT */
 .contact-right {
     display: flex;
     align-items: flex-start;
 }
 
-/* IMAGE */
 .contact-right img {
     width: 260px;
     height: 340px;
@@ -182,6 +504,7 @@ footer {
 .footer-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
 }
 
 .footer-left {
@@ -195,79 +518,5 @@ footer {
 footer a {
     color: white;
     text-decoration: underline;
+    margin: 0 5px;
 }
-</style>
-</head>
-
-<body>
-
-<header>
-<a href="index.html">Main</a>
-<a href="home.html">Home</a>
-<a href="about.html">About</a>
-<a href="contact.html" class="active">Contact</a>
-</header>
-
-<main>
-
-<div class="contact-container">
-
-<div class="contact-left">
-<h1>Contact Me</h1>
-
-<p>
-If you'd like to connect with me or learn more about my work, please use the contact form below.
-</p>
-
-<div class="form-card">
-<input type="text" placeholder="Name">
-<input type="email" placeholder="Email">
-<textarea rows="5" placeholder="Message"></textarea>
-
-<button>Send Message</button>
-</div>
-
-<div class="contact-details">
-<h2>Contact Details</h2>
-
-<p>
-💼 <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile (opens in new tab)">LinkedIn Profile</a>
-</p>
-
-<p>
-📍 London, United Kingdom
-</p>
-
-<p>
-Please use the contact form above to get in touch.
-</p>
-
-</div>
-
-</div>
-
-<div class="contact-right">
-<img src="images/Contact.png" alt="Contact image">
-</div>
-
-</div>
-
-</main>
-
-<footer>
-<div class="footer-container">
-
-<div class="footer-left">
-© 2026 Claudia | Built using HTML, CSS & GitHub Pages
-</div>
-
-<div class="footer-center">
-<a href="mailto:cake1@gmail.com">Email Me</a> |
-<a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile (opens in new tab)">LinkedIn</a>
-</div>
-
-</div>
-</footer>
-
-</body>
-</html>
