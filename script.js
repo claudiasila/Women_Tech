@@ -44,7 +44,7 @@ if (canvas) {
 
     let particles = [];
 
-    for (let i = 0; i < 60; i++) {
+    for (let i = 0; i < 40; i++) {
         particles.push({
             x: Math.random() * canvas.width,
             y: Math.random() * canvas.height,
@@ -66,7 +66,7 @@ if (canvas) {
 
             ctx.beginPath();
             ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
-            ctx.fillStyle = "rgba(255,255,255,0.5)";
+            ctx.fillStyle = "rgba(255,255,255,0.15)";
             ctx.fill();
         });
 
