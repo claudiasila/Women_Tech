@@ -1,15 +1,16 @@
 const themeToggleButton = document.getElementById('theme-toggle');
 const body = document.body;
+const isAboutPage = window.location.pathname.includes('about.html');
 
 /* =========================
-   DARK MODE (UNCHANGED)
+   DARK MODE ONLY ON ABOUT
 ========================= */
 
-if (localStorage.getItem('theme') === 'dark') {
+if (isAboutPage && localStorage.getItem('theme') === 'dark') {
     body.classList.add('dark-mode');
 }
 
-if (themeToggleButton) {
+if (themeToggleButton && isAboutPage) {
     if (body.classList.contains('dark-mode')) {
         themeToggleButton.textContent = 'Toggle Light Mode';
     } else {
