@@ -16,6 +16,16 @@ body {
     min-height: 100vh;
 }
 
+/* CANVAS */
+#background-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
 /* HEADER */
 header {
     display: flex;
@@ -208,6 +218,8 @@ footer a {
 
 <body>
 
+<canvas id="background-canvas"></canvas>
+
 <header>
 <a href="index.html">Main</a>
 <a href="home.html" class="active">Home</a>
@@ -277,5 +289,6 @@ This project demonstrates my ability to build, structure, and deploy a website u
 </div>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
