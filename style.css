@@ -41,6 +41,8 @@ header a:hover {
 
 .active {
     color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 3px;
 }
 
 /* MAIN */
