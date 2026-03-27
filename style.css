@@ -28,7 +28,7 @@ header {
 
 header a {
     margin-left: 30px;
-    color: white;
+    color: rgba(255,255,255,0.7);
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
@@ -41,8 +41,6 @@ header a:hover {
 
 .active {
     color: #ffffff;
-    border-bottom: 2px solid #ffffff;
-    padding-bottom: 3px;
 }
 
 /* MAIN */
