@@ -31,6 +31,18 @@ if (themeToggleButton && isAboutPage) {
 }
 
 /* =========================
+   BUTTON CLICK
+========================= */
+
+const myBtn = document.getElementById('myBtn');
+
+if (myBtn) {
+    myBtn.addEventListener('click', function () {
+        myBtn.style.backgroundColor = 'red';
+    });
+}
+
+/* =========================
    CANVAS ANIMATION
 ========================= */
 
